@@ -1,11 +1,74 @@
+<h1>Job Matcher</h1>
 <h1>Time to match you with your dream job!</h1>
 
-<%= label_tag(:q, "Search by job type:") %>
-<%= text_field_tag(:q) %>
-<%= submit_tag("Search") %><br>
+<%# <%= label_tag(:q, "Search by job type:") %>
+<%# <%= text_field_tag(:q) %>
+<%# <%= submit_tag("Search") %><br>
 
-<b1>Or...</b1><br>
+<%# <b1>Or...</b1><br>
 
-<%= label_tag(:q, "Search by skill type:") %>
-<%= text_field_tag(:q) %>
-<%= submit_tag("Search") %>
+<%# <%= label_tag(:q, "Search by skill type:") %>
+<%# <%= text_field_tag(:q) %>
+<%# <%= submit_tag("Search") %>
+
+<%= button_to "Search for job", controller: 'search' %><br> 
+<%= button_to "Search by skills" %><br>
+
+<h3>Your top 10 job recommendations for this week!</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Jobs</th>
+            <th>Description</th>
+            <th colspan="2"></th>
+            <th rowspan="10"></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td>Job 1</td>
+            <td>Description for job 1</td>
+        </tr>
+        <tr>
+            <td>Job 2</td>
+            <td>Description for job 2</td>
+        </tr>
+        <tr>
+            <td>Job 3</td>
+            <td>Description for job 3</td>
+        </tr>
+        <tr>
+            <td>Job 4</td>
+            <td>Description for job 4</td>
+        </tr>
+        <tr>
+            <td>Job 5</td>
+            <td>Description for job 5</td>
+        </tr>
+        <tr>
+            <td>Job 6</td>
+            <td>Description for job 6</td>
+        </tr>
+        <tr>
+            <td>Job 6</td>
+            <td>Description for job 6</td>
+        </tr>
+        <tr>
+            <td>Job 7</td>
+            <td>Description for job 7</td>
+        </tr>
+        <tr>
+            <td>Job 8</td>
+            <td>Description for job 8</td>
+        </tr>
+        <tr>
+            <td>Job 9</td>
+            <td>Description for job 9</td>
+        </tr>
+        <tr>
+            <td>Job 10</td>
+            <td>Description for job 10</td>
+        </tr>
+    </tbody>
+</table>
